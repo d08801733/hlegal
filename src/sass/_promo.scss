@@ -1,0 +1,76 @@
+.promo {
+  padding-top: 50px;
+  min-height: 2118px;
+  background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
+  border-radius: 0 0 12px 12px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rightside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__language {
+    border-radius: 8px;
+    padding: 5px 7px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: $basic-white;
+    background-color: transparent;
+    border: none;
+
+    &_selected {
+      background-color: $accent;
+    }
+  }
+
+  &__separator {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: $grey---separator;
+  }
+
+  &__street {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: $basic-white;
+    text-decoration: none;
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: $basic-white;
+    text-decoration: none;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: $basic-white;
+    text-decoration: none;
+  }
+}
