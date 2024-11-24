@@ -1,10 +1,15 @@
 .promo {
-  padding-top: 50px;
+  // padding-top: 50px;
   min-height: 2118px;
   background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
   border-radius: 0 0 12px 12px;
 
+  &__splash {
+    background: url("../images/promo/symbol.png") center center no-repeat;
+  }
+
   &__header {
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
   }
@@ -72,5 +77,19 @@
     text-align: right;
     color: $basic-white;
     text-decoration: none;
+  }
+
+  &__title {
+    margin-top: 261px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    color: $basic-white;
+  }
+
+  &__scroll {
+    display: block;
+    margin: 305px auto 0 auto;
   }
 }
