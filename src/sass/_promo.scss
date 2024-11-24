@@ -138,6 +138,21 @@
     font-weight: 700;
     font-size: 30px;
     color: $basic-white;
+
+    &_active {
+      margin-top: 10px;
+      font-size: 38px;
+      background: linear-gradient(298deg, #f0145a 0%, #ef8080 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &_blue {
+      margin-top: 30px;
+      font-size: 22px;
+      color: $active---regular;
+    }
   }
 
   &__description {
@@ -147,5 +162,47 @@
     line-height: 158%;
     font-size: 19px;
     color: $basic-white;
+  }
+
+  &__grid {
+    margin-top: 60px;
+  }
+
+  &__box {
+    margin-top: 60px;
+    width: 400px;
+  }
+
+  &__services {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $active---regular;
+    text-decoration: none;
+  }
+
+  &__round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    width: 92px;
+    height: 92px;
+    background: $basic-white;
+  }
+
+  &__text {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: $basic-white;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
