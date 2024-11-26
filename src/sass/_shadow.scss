@@ -1,0 +1,17 @@
+.shadow {
+  &__background {
+    margin: 0 auto;
+    border-radius: 0 0 12px 12px;
+    height: 10px;
+
+    &:nth-child(1) {
+      width: 1400px;
+      background: #cacadb;
+    }
+
+    &:nth-child(2) {
+      width: 1360px;
+      background: #e7e7f2;
+    }
+  }
+}

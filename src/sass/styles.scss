@@ -3,3 +3,16 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
+
+.container {
+  margin: 0 auto;
+  width: 91.67%;
+}
+
+button {
+  cursor: pointer;
+}
+
+@import "variables";
+@import "promo";
+@import "shadow";
