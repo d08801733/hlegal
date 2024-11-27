@@ -1,6 +1,10 @@
 .team {
-  margin-top: 60px;
+  // margin-top: 60px;
   padding-bottom: 46px;
+
+  &__wrapper {
+    margin-top: 60px;
+  }
 
   &__item {
     display: flex;
