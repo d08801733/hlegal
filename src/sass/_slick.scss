@@ -1,0 +1,28 @@
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 0;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    border: none;
+    color: $active---regular;
+    opacity: 0.2;
+    background-color: $active---regular;
+  }
+
+  .slick-active {
+    button {
+      opacity: 1;
+    }
+  }
+}

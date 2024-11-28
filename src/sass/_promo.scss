@@ -186,6 +186,10 @@
     text-transform: uppercase;
     color: $active---regular;
     text-decoration: none;
+
+    &::after {
+      content: url("../icons/arrow.svg");
+    }
   }
 
   &__round {

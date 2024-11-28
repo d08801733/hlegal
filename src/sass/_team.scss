@@ -1,0 +1,65 @@
+.team {
+  margin-top: 60px;
+  padding-bottom: 46px;
+
+  .team__item {
+    display: flex;
+    height: 344px;
+  }
+
+  &__image {
+    img {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      width: 400px;
+      height: 344px;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    border-radius: 0 12px 12px 0;
+    padding: 30px;
+    background: $grey---bg-;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $active---regular;
+    text-decoration: none;
+
+    &::after {
+      content: url("../icons/arrow.svg");
+    }
+  }
+
+  &__text {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 38px;
+    background: linear-gradient(298deg, #f0145a 0%, #ef8080 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__name {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: $grey---text;
+  }
+
+  &__job {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: $grey---text;
+  }
+}
