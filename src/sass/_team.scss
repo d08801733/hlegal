@@ -2,16 +2,18 @@
   margin-top: 60px;
   padding-bottom: 46px;
 
-  &__item {
+  .team__item {
     display: flex;
     height: 344px;
+  }
 
-    &:nth-child(2) {
-      margin-top: 60px;
-    }
-
-    &:nth-child(3) {
-      margin-top: 60px;
+  &__image {
+    img {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      width: 400px;
+      height: 344px;
+      object-fit: cover;
     }
   }
 
