@@ -1,0 +1,84 @@
+.recommended {
+  padding-top: 30px;
+  background-color: #f5f5fa;
+
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $active---regular;
+    text-decoration: none;
+
+    &::after {
+      content: url("../icons/arrow.svg");
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 38px;
+    background: linear-gradient(298deg, #f0145a 0%, #ef8080 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 420px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  &__img {
+    height: 200px;
+  }
+
+  &__content {
+    padding: 30px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: $active---regular;
+  }
+
+  &__date {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $grey---text;
+  }
+
+  &__divider {
+    margin: 15px auto 0 auto;
+    width: 360px;
+    height: 4px;
+    background: $grey---separator;
+  }
+
+  &__text {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: $basic-black;
+  }
+}
