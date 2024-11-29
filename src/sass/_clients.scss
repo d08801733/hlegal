@@ -1,5 +1,6 @@
 .clients {
   margin-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
     margin: 0;
@@ -15,10 +16,11 @@
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__item {
-    width: 360px;
+    width: 430px;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -26,6 +28,7 @@
 
     &:nth-child(1) {
       background: #1c4280;
+      border-top-left-radius: 12px;
     }
 
     &:nth-child(2) {
@@ -38,6 +41,7 @@
 
     &:nth-child(4) {
       background: #9e4dc3;
+      border-top-right-radius: 12px;
     }
 
     &:nth-child(5) {
@@ -58,6 +62,7 @@
 
     &:nth-child(9) {
       background: #eaeaea;
+      border-bottom-left-radius: 12px;
     }
 
     &:nth-child(10) {
@@ -70,6 +75,7 @@
 
     &:nth-child(12) {
       background: $basic-black;
+      border-bottom-right-radius: 12px;
     }
   }
 }

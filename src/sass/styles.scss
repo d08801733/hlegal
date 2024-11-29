@@ -6,7 +6,8 @@ html {
 
 .container {
   margin: 0 auto;
-  width: 91.67%;
+  // width: 91.67%;
+  width: 1600px;
 }
 
 button {
@@ -21,3 +22,4 @@ button {
 @import "clients";
 @import "recommended";
 @import "footer";
+@import "media";
