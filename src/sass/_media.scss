@@ -79,3 +79,68 @@
     }
   }
 }
+
+@media screen and (max-width: 1439px) {
+  .container {
+    width: 904px;
+  }
+
+  .promo {
+    &__splash {
+      background: url("../images/media/symbol-tablet.png") center center
+        no-repeat;
+    }
+
+    &__frame {
+      &:nth-child(3) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 405px;
+      }
+    }
+
+    &__item {
+      width: 261px;
+    }
+  }
+
+  .team {
+    .team__item {
+      height: 528px;
+    }
+
+    &__image {
+      img {
+        height: 528px;
+      }
+    }
+  }
+
+  .clients {
+    &__item {
+      width: 256px;
+    }
+  }
+
+  .recommended {
+    &__item {
+      width: 281px;
+    }
+
+    &__img {
+      img {
+        width: 281px;
+      }
+    }
+
+    &__divider {
+      width: 221px;
+    }
+  }
+
+  .footer {
+    &__divider {
+      width: 904px;
+    }
+  }
+}
