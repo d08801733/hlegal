@@ -15,10 +15,14 @@
     justify-content: space-between;
   }
 
+  &__logo_mobile {
+    display: none;
+  }
+
   &__rightside {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    // row-gap: 16px;
   }
 
   &__contacts {
@@ -67,6 +71,7 @@
   }
 
   &__navbar {
+    margin-top: 16px;
     display: flex;
     justify-content: flex-end;
     gap: 15px;
@@ -214,5 +219,6 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
