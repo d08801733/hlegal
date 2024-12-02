@@ -9,13 +9,25 @@
     background: url("../images/promo/symbol.png") center center no-repeat;
   }
 
+  &__hamburger {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
   &__header {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
   }
 
-  &__logo_mobile {
+  &__content {
+    display: none;
+  }
+
+  &__logo_tablet {
     display: none;
   }
 

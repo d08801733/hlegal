@@ -160,7 +160,7 @@
       display: none;
     }
 
-    &__logo_mobile {
+    &__logo_tablet {
       margin-top: 30px;
       display: block;
     }
@@ -267,6 +267,227 @@
 
     &__copyright {
       font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 315px;
+  }
+
+  .promo {
+    &__splash {
+      background: none;
+    }
+
+    &__contacts {
+      display: none;
+    }
+
+    &__content {
+      display: block;
+    }
+
+    &__header {
+      padding-top: 12px;
+      display: block;
+    }
+
+    &__nav {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(245, 245, 250, 0.2);
+    }
+
+    &__pinned {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .hamburger {
+      display: block;
+
+      span {
+        display: block;
+        margin-bottom: 4px;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        &:nth-child(3) {
+          margin: 0;
+        }
+      }
+    }
+
+    .hamburger__active {
+      span {
+        margin-bottom: -2px;
+
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+
+    &__logo_tablet {
+      display: none;
+    }
+
+    &__logo_mobile {
+      margin-top: 15px;
+      display: block;
+    }
+
+    &__navbar {
+      display: none;
+    }
+
+    &__title {
+      margin-top: 129px;
+    }
+
+    &__scroll {
+      margin-top: 159px;
+    }
+
+    &__experience {
+      gap: 30px;
+    }
+
+    &__frame {
+      &:nth-child(1) {
+        margin: 0;
+        justify-content: center;
+      }
+    }
+
+    &__frame-item {
+      font-size: 30px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__grid {
+      margin-top: 30px;
+    }
+
+    &__subtitle_active {
+      font-size: 30px;
+    }
+
+    &__item {
+      margin-top: 30px;
+    }
+  }
+
+  .shadow {
+    &__background {
+      &:nth-child(1) {
+        width: 335px;
+      }
+
+      &:nth-child(2) {
+        width: 295px;
+      }
+    }
+  }
+
+  .team {
+    .team__item {
+      height: 1266px;
+    }
+
+    &__image {
+      img {
+        height: 500px;
+      }
+    }
+  }
+
+  .clients {
+    margin-top: 30px;
+
+    &__item {
+      width: 375px;
+
+      &:nth-child(7) {
+        display: none;
+      }
+
+      &:nth-child(8) {
+        display: none;
+      }
+
+      &:nth-child(9) {
+        display: none;
+      }
+
+      &:nth-child(10) {
+        display: none;
+      }
+
+      &:nth-child(11) {
+        display: none;
+      }
+
+      &:nth-child(12) {
+        display: none;
+      }
+    }
+  }
+
+  .recommended {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__item {
+      width: 315px;
+
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+    }
+
+    &__img {
+      img {
+        width: 315px;
+      }
+    }
+
+    &__divider {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+
+    &__contacts {
+      flex-direction: column;
+    }
+
+    &__separator {
+      display: none;
     }
   }
 }

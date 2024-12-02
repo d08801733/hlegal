@@ -15,6 +15,56 @@
   </head>
   <body>
     <section class="promo">
+      <div class="promo__content">
+        <nav class="promo__nav">
+          <div class="promo__lang">
+            <button class="promo__language">УК</button>
+            <button class="promo__language">РУ</button>
+            <button class="promo__language promo__language_selected">EN</button>
+          </div>
+
+          <div class="promo__tel">
+            <a href="tel:0800211927" class="promo__phone">0800 211 927</a>
+          </div>
+        </nav>
+
+        <div class="promo__pinned">
+          <a href="#">
+            <img src="images/media/logo-mobile.png" alt="Logo" />
+          </a>
+
+          <header class="header">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#">about us</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#">services</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#">team</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#">publications</a>
+              </li>
+
+              <li class="header__menu-item">
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </header>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
         <div class="promo__splash">
           <header class="promo__header">
@@ -40,12 +90,12 @@
 
                 <div class="promo__separator"></div>
 
-                <a href="#">
+                <a href="#" class="promo__facebook">
                   <img src="icons/facebook.svg" alt="Facebook" />
                 </a>
               </div>
 
-              <div class="promo__logo promo__logo_mobile">
+              <div class="promo__logo promo__logo_tablet">
                 <img src="images/promo/logo.png" alt="Logo" />
               </div>
 
@@ -465,5 +515,6 @@
     ></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>
