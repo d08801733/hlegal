@@ -19,5 +19,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-webp": "^4.0.1",
     "sass": "^1.81.0"
+  },
+  "dependencies": {
+    "gulp-replace": "^1.1.4"
   }
 }
