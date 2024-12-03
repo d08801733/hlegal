@@ -5,6 +5,7 @@ const cleanCSS = require("gulp-clean-css");
 const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 const minify = require("gulp-minify");
+const webp = require("gulp-webp");
 
 gulp.task("server", function () {
   browserSync({
@@ -34,9 +35,21 @@ gulp.task("scripts", function () {
     .pipe(gulp.dest("src/js"));
 });
 
+gulp.task("convertToWebp", function () {
+  gulp.src(
+    "images/**/*.{jpg, jpeg, png}",
+    { encoding: false }.pipe(webp()).pipe(gulp.dest("src/optimages"))
+  );
+});
+
 gulp.task("watch", function () {
   gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel("styles"));
   gulp.watch("src/js/**/*.+(js|mjs)"), gulp.parallel("scripts");
+  gulp.watch("src/images/**/*.{jpg, jpeg, png}"),
+    gulp.parallel("convertToWebp");
 });
 
-gulp.task("default", gulp.parallel("watch", "server", "styles", "scripts"));
+gulp.task(
+  "default",
+  gulp.parallel("watch", "server", "styles", "scripts", "convertToWebp")
+);
