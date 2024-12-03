@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".team__wrapper").slick({arrows:!1,dots:!0})});
