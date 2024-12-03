@@ -42,20 +42,20 @@ gulp.task("convertToWebp", function () {
   gulp
     .src("src/images/**/*.{jpg,jpeg,png}", { encoding: false }) // Берем все изображения из исходной папки
     .pipe(webp()) // Конвертируем в формат webp
-    .pipe(gulp.dest("src/optimages")); // Сохраняем в папку назначения
+    .pipe(gulp.dest("src/img")); // Сохраняем в папку назначения
 });
 
 gulp.task("updateHTMLPaths", function () {
   gulp
     .src(["src/*.html"]) // Берем HTML файлы
-    .pipe(replace("images", "optimages"))
+    .pipe(replace("images", "img"))
     .pipe(gulp.dest("src")); // Сохраняем измененные файлы
 });
 
 gulp.task("updateCSSPaths", function () {
   gulp
     .src(["src/css/*.css"]) // Берем CSS файлы
-    .pipe(replace("images", "optimages"))
+    .pipe(replace("images", "img"))
     .pipe(gulp.dest("src/css")); // Сохраняем измененные файлы
 });
 
