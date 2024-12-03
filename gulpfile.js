@@ -26,6 +26,8 @@ gulp.task("styles", function () {
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(rename({ suffix: ".min", prefix: "" }))
     .pipe(autoprefixer())
+    .pipe(replace("images", "img"))
+    .pipe(replace(/\.(png|jpe?g)/g, ".webp"))
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("src/css"))
     .pipe(browserSync.stream());
@@ -49,14 +51,8 @@ gulp.task("updateHTMLPaths", function () {
   gulp
     .src(["src/*.html"]) // Берем HTML файлы
     .pipe(replace("images", "img"))
+    .pipe(replace(/\.(png|jpe?g)/g, ".webp"))
     .pipe(gulp.dest("src")); // Сохраняем измененные файлы
-});
-
-gulp.task("updateCSSPaths", function () {
-  gulp
-    .src(["src/css/*.css"]) // Берем CSS файлы
-    .pipe(replace("images", "img"))
-    .pipe(gulp.dest("src/css")); // Сохраняем измененные файлы
 });
 
 gulp.task("watch", function () {
@@ -64,7 +60,6 @@ gulp.task("watch", function () {
   gulp.watch("src/js/**/*.+(js|mjs)"), gulp.parallel("scripts");
   gulp.watch("src/images/**/*.{jpg,jpeg,png}"), gulp.parallel("convertToWebp");
   gulp.watch("src/**/*.html"), gulp.parallel("updateHTMLPaths");
-  gulp.watch("src/**/*.css"), gulp.parallel("updateCSSPaths");
 });
 
 gulp.task(
@@ -75,7 +70,6 @@ gulp.task(
     "styles",
     "scripts",
     "convertToWebp",
-    "updateHTMLPaths",
-    "updateCSSPaths"
+    "updateHTMLPaths"
   )
 );
