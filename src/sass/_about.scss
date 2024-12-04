@@ -1,0 +1,28 @@
+.promo-about {
+  background: $basic-white;
+
+  &__language {
+    color: $grey---text;
+  }
+
+  &__street {
+    color: $grey---text;
+  }
+
+  &__phone {
+    color: $grey---text;
+  }
+
+  &__link {
+    color: $active---regular;
+  }
+
+  &__link_selected {
+    color: $accent;
+  }
+}
+
+.facebook-about-logo {
+  width: 24px;
+  height: 24px;
+}
